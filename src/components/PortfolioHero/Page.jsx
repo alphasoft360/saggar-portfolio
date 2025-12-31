@@ -53,7 +53,7 @@ const PortfolioHero = () => {
               <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
                 Hello, I&apos;m
                 <br />
-                <span className="block mt-1">Saggar Farid</span>
+                <span className="block mt-1 text-purple-900">Saggar Farid</span>
               </h1>
 
               <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">

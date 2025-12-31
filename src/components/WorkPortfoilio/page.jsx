@@ -31,9 +31,9 @@ const WorkPortfoilio = () => {
               and long-term maintainability.
             </p>
 
-            <button className="mt-6 bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-md font-medium transition-all duration-300 hover:shadow-lg">
+            {/* <button className="mt-6 bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-md font-medium transition-all duration-300 hover:shadow-lg">
               Let&apos;s Work Together
-            </button>
+            </button> */}
           </div>
 
           {/* Right Column - Experience Cards */}
