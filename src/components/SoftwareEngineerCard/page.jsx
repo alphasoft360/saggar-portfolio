@@ -24,7 +24,7 @@ const SoftwareEngineerCard = () => {
           {/* Left Side - Image */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="w-80 h-[450px] md:w-[380px] md:h-[520px] rounded-3xl overflow-hidden shadow-xl bg-gray-100">
+              <div className="w-80 h-[450px] md:w-[380px] md:h-[520px] hidden md:block rounded-3xl overflow-hidden shadow-xl bg-gray-100">
                 <img
                   src={saggarImage}
                   alt="Saggar Farid"
