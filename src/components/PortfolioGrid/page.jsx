@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import data from '../../data.json';
+import data from '../../data/data.json';
 
 const PortfolioGrid = () => {
   const projects = data.portfolioProjects;

@@ -6,7 +6,7 @@ import {
   Linkedin,
   Github,
 } from "lucide-react";
-import data from "../../data.json";
+import data from "../../data/data.json";
 
 /* =========================
    COMPONENT

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import saggarImage from "../../assets/saggar_farid.png";
-import data from "../../data.json";
+import data from "../../data/data.json";
 
 /* =========================
    Count Up Stat Component
