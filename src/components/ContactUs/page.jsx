@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   MapPin,
   Mail,
@@ -12,24 +12,6 @@ import data from "../../data/data.json";
    COMPONENT
 ========================= */
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    location: "",
-    budget: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = () => {
-    console.log("Form submitted:", formData);
-    alert("Thank you! Your message has been sent.");
-  };
-
   const whatsappNumber = data.profile.contact.phone.replace(/[^0-9]/g, '');
 
   return (
@@ -122,74 +104,36 @@ const ContactUs = () => {
               </div>
             </div>
 
-            {/* RIGHT COLUMN - FORM */}
-            <div className="space-y-6">
-              <p className="text-gray-500 leading-relaxed">
+            {/* RIGHT COLUMN - CONTACT CTA */}
+            <div className="space-y-6 flex flex-col justify-center">
+              <p className="text-gray-500 leading-relaxed text-lg">
                 I&apos;m always open to discussing enterprise software, backend
                 systems, or freelance opportunities.
               </p>
 
-              <input
-                type="text"
-                name="name"
-                placeholder="Name*"
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full py-3 border-b border-gray-300 focus:border-purple-600 outline-none"
-              />
+              <div className="space-y-4">
+                <p className="text-gray-700 font-medium">
+                  Ready to start your next project?
+                </p>
 
-              <input
-                type="email"
-                name="email"
-                placeholder="Email*"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full py-3 border-b border-gray-300 focus:border-purple-600 outline-none"
-              />
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href={`mailto:${data.profile.contact.email}`}
+                    className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl text-center"
+                  >
+                    Send Email
+                  </a>
 
-              <input
-                type="text"
-                name="location"
-                placeholder="Location*"
-                value={formData.location}
-                onChange={handleChange}
-                className="w-full py-3 border-b border-gray-300 focus:border-purple-600 outline-none"
-              />
-
-              <div className="grid grid-cols-2 gap-6">
-                <input
-                  type="text"
-                  name="budget"
-                  placeholder="Budget*"
-                  value={formData.budget}
-                  onChange={handleChange}
-                  className="py-3 border-b border-gray-300 focus:border-purple-600 outline-none"
-                />
-                <input
-                  type="text"
-                  name="subject"
-                  placeholder="Subject*"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  className="py-3 border-b border-gray-300 focus:border-purple-600 outline-none"
-                />
+                  <a
+                    href={`https://wa.me/${whatsappNumber}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl text-center"
+                  >
+                    WhatsApp Me
+                  </a>
+                </div>
               </div>
-
-              <textarea
-                name="message"
-                placeholder="Message*"
-                rows={4}
-                value={formData.message}
-                onChange={handleChange}
-                className="w-full py-3 border-b border-gray-300 focus:border-purple-600 outline-none resize-none"
-              />
-
-              <button
-                onClick={handleSubmit}
-                className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl"
-              >
-                Submit Message
-              </button>
             </div>
 
           </div>
