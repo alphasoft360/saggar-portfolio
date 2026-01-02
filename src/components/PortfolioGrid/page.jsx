@@ -1,57 +1,9 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import data from '../../data.json';
 
 const PortfolioGrid = () => {
-  const projects = [
-    {
-      id: 1,
-      category: 'UI-UX DESIGN',
-      title: 'Product Admin Dashboard',
-      description: 'Vivamus a viverra ipsum. Morbi sollicitudin dui libero, at interdum lectus ullamcorper in. Suspendisse.',
-      image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop',
-      bgColor: 'from-pink-200 to-orange-200'
-    },
-    {
-      id: 2,
-      category: 'UI-UX DESIGN',
-      title: 'Product Admin Dashboard',
-      description: 'Aliquam at mollis ipsum. Curabitur ac mi tortor. Suspendisse potenti. Proin feugiat velit vel lectus.',
-      image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=400&fit=crop',
-      bgColor: 'from-gray-800 to-gray-900'
-    },
-    {
-      id: 3,
-      category: 'UI-UX DESIGN',
-      title: 'Product Admin Dashboard',
-      description: 'Vestibulum a mollis interdum ligula id. Aliquam velit. Vestibulum ante ipsum primis in faucibus orci.',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop',
-      bgColor: 'from-gray-200 to-gray-300'
-    },
-    {
-      id: 4,
-      category: 'UI-UX DESIGN',
-      title: 'Product Admin Dashboard',
-      description: 'Donec semper magna sit arcu. Nullam digni porttitor semper accumsan enim non quam.',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop',
-      bgColor: 'from-amber-100 to-amber-200'
-    },
-    {
-      id: 5,
-      category: 'UI-UX DESIGN',
-      title: 'Product Admin Dashboard',
-      description: 'Aliquam at mollis ipsum. Curabitur ac mi tortor. Suspendisse potenti. Proin feugiat velit vel.',
-      image: 'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600&h=400&fit=crop',
-      bgColor: 'from-green-300 to-yellow-200'
-    },
-    {
-      id: 6,
-      category: 'UI-UX DESIGN',
-      title: 'Product Admin Dashboard',
-      description: 'Aliquam at mollis ipsum. Curabitur ac mi tortor. Suspendisse potenti. Proin feugiat velit vel.',
-      image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&h=400&fit=crop',
-      bgColor: 'from-purple-200 to-purple-300'
-    }
-  ];
+  const projects = data.portfolioProjects;
 
   return (
     <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">

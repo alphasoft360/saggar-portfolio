@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import saggarImage from "../../assets/saggar_farid.png";
+import data from "../../data.json";
 
 /* =========================
    Count Up Stat Component
@@ -53,23 +54,18 @@ const PortfolioHero = () => {
               <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
                 Hello, I&apos;m
                 <br />
-                <span className="block mt-1 text-purple-900">Saggar Farid</span>
+                <span className="block mt-1 text-purple-900">{data.hero.name}</span>
               </h1>
 
               <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
-                I&apos;m a{" "}
-                <span className="font-semibold">Senior Software Engineer</span>{" "}
-                and{" "}
-                <span className="font-semibold">Full Stack Developer</span>{" "}
-                with 9+ years of experience, building scalable backend systems,
-                modern web applications, and high-impact freelance platforms.
+                {data.hero.description}
               </p>
 
               {/* Stats */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6">
-                <Stat value="9+" label="Years Experience" />
-                <Stat value="40+" label="Projects Delivered" />
-                <Stat value="15+" label="Happy Clients" />
+                {data.hero.stats.map((stat, index) => (
+                  <Stat key={index} value={stat.value} label={stat.label} />
+                ))}
               </div>
             </div>
           </div>
