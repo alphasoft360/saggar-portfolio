@@ -6,24 +6,7 @@ import {
   Linkedin,
   Github,
 } from "lucide-react";
-
-/* =========================
-   PROFILE DATA
-========================= */
-const profileData = {
-  name: "Saggar Farid",
-  role: "Senior Software Engineer | Technical Lead - Alphasoft360",
-  bio: "Senior Software Engineer and Technical Lead with extensive experience in full-stack development, backend architecture, and delivering enterprise and freelance solutions for global platforms.",
-  contact: {
-    email: "Saggar.farid@gmail.com",
-    phone: "+92-304-7527264",
-    address: "Pakistan",
-  },
-  socials: {
-    linkedin: "https://www.linkedin.com/in/saggar-farid-6811b3111/",
-    github: "https://github.com/gaftaaus",
-  },
-};
+import data from "../../data.json";
 
 /* =========================
    COMPONENT
@@ -47,6 +30,8 @@ const ContactUs = () => {
     alert("Thank you! Your message has been sent.");
   };
 
+  const whatsappNumber = data.profile.contact.phone.replace(/[^0-9]/g, '');
+
   return (
     <div className="min-h-screen bg-gray-100 py-16 px-4">
       <div className="max-w-7xl mx-auto">
@@ -60,7 +45,7 @@ const ContactUs = () => {
                   Let&apos;s discuss your Project
                 </h2>
                 <p className="text-gray-500 leading-relaxed">
-                  {profileData.bio}
+                  {data.profile.bio}
                 </p>
               </div>
 
@@ -75,7 +60,7 @@ const ContactUs = () => {
                   <div>
                     <p className="text-sm text-gray-500">Address</p>
                     <p className="text-gray-900 font-medium">
-                      {profileData.contact.address}
+                      {data.profile.contact.address}
                     </p>
                   </div>
                 </div>
@@ -87,9 +72,12 @@ const ContactUs = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Email</p>
-                    <p className="text-gray-900 font-medium">
-                      {profileData.contact.email}
-                    </p>
+                    <a
+                      href={`mailto:${data.profile.contact.email}`}
+                      className="text-gray-900 font-medium hover:text-purple-600 transition-colors"
+                    >
+                      {data.profile.contact.email}
+                    </a>
                   </div>
                 </div>
 
@@ -100,9 +88,14 @@ const ContactUs = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Phone</p>
-                    <p className="text-gray-900 font-medium">
-                      {profileData.contact.phone}
-                    </p>
+                    <a
+                      href={`https://wa.me/${whatsappNumber}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-gray-900 font-medium hover:text-purple-600 transition-colors"
+                    >
+                      {data.profile.contact.phone}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -110,7 +103,7 @@ const ContactUs = () => {
               {/* SOCIAL ICONS */}
               <div className="flex gap-3 pt-6">
                 <a
-                  href={profileData.socials.linkedin}
+                  href={data.profile.socials.linkedin}
                   target="_blank"
                   rel="noreferrer"
                   className="w-10 h-10 border border-gray-200 hover:bg-purple-600 hover:border-purple-600 rounded-lg flex items-center justify-center transition-all group"
@@ -119,7 +112,7 @@ const ContactUs = () => {
                 </a>
 
                 <a
-                  href={profileData.socials.github}
+                  href={data.profile.socials.github}
                   target="_blank"
                   rel="noreferrer"
                   className="w-10 h-10 border border-gray-200 hover:bg-purple-600 hover:border-purple-600 rounded-lg flex items-center justify-center transition-all group"

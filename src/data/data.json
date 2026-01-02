@@ -1,0 +1,108 @@
+{
+  "profile": {
+    "name": "Saggar Farid",
+    "role": "Senior Software Engineer | Technical Lead - Alphasoft360",
+    "bio": "Senior Software Engineer and Technical Lead with extensive experience in full-stack development, backend architecture, and delivering enterprise and freelance solutions for global platforms.",
+    "contact": {
+      "email": "Saggar.farid@gmail.com",
+      "phone": "+92-304-7527264",
+      "address": "Pakistan"
+    },
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/saggar-farid-6811b3111/",
+      "github": "https://github.com/gaftaaus"
+    }
+  },
+  "hero": {
+    "name": "Saggar Farid",
+    "description": "I'm a Senior Software Engineer and Full Stack Developer with 9+ years of experience, building scalable backend systems, modern web applications, and high-impact freelance platforms.",
+    "stats": [
+      { "value": "9+", "label": "Years Experience" },
+      { "value": "40+", "label": "Projects Delivered" },
+      { "value": "15+", "label": "Happy Clients" }
+    ]
+  },
+  "biography": [
+    "I am a Senior Software Engineer with over 9+ years of professional experience in full-stack software development and backend system design. I specialize in building scalable, secure, and high-performance applications that align with real-world business requirements.",
+    "Throughout my career, I have worked closely with cross-functional teams and stakeholders to design, develop, and optimize software solutions for both enterprise environments and freelance clients, maintaining a strong focus on performance, scalability, and long-term maintainability.",
+    "Freelance Project – Maker's Row: I contributed to the development and optimization of Maker's Row, a leading online platform that connects brands with vetted manufacturers to streamline production and bring product ideas to life.",
+    "Freelance Project – Round Here: I worked on Round Here, a platform created to empower Michigan founders by aggregating essential resources, funding opportunities, networking events, and business tools.",
+    "Backend Expertise: Strong hands-on experience with Laravel and Node.js, developing RESTful APIs, backend services, and scalable architectures.",
+    "Frontend & DevOps: Experienced with React, Vue.js, MySQL, and DevOps best practices for optimized deployments.",
+    "Agile & Team Collaboration: I follow Agile methodologies and collaborate effectively with teams to deliver high-quality solutions."
+  ],
+  "whatIDo": {
+    "title": "What I Do",
+    "paragraphs": [
+      "I am a Senior Software Engineer at Alphasoft360 with over 9+ years of professional experience in full-stack software development and backend system design. I specialize in building scalable, secure, and high-performance applications aligned with real-world business needs.",
+      "I work closely with cross-functional teams and stakeholders to design, develop, and optimize enterprise solutions and freelance platforms, maintaining a strong focus on performance, scalability, and long-term maintainability."
+    ]
+  },
+  "workProjects": [
+    {
+      "title": "Freelance Project – Maker's Row",
+      "description": "Contributed to the development and optimization of Maker's Row, a leading online platform connecting brands with vetted manufacturers. My work focused on backend improvements, performance optimization, and maintaining reliable system integrations.",
+      "url": "https://makersrow.com/"
+    },
+    {
+      "title": "Freelance Project – Round Here",
+      "description": "Worked on Round Here, a platform empowering Michigan founders by aggregating essential resources, funding opportunities, networking events, and business tools. I helped deliver scalable features and enhance system performance.",
+      "url": "https://Roundhere.io"
+    },
+    {
+      "title": "Technical Expertise",
+      "description": "Strong hands-on experience with Laravel and Node.js for backend development, RESTful APIs, and scalable architectures. Experienced in integrating React and Vue.js frontends with backend systems, along with database optimization and DevOps workflows using MySQL.",
+      "url": "#"
+    }
+  ],
+  "portfolioProjects": [
+    {
+      "id": 1,
+      "category": "UI-UX DESIGN",
+      "title": "Product Admin Dashboard",
+      "description": "Vivamus a viverra ipsum. Morbi sollicitudin dui libero, at interdum lectus ullamcorper in. Suspendisse.",
+      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop",
+      "bgColor": "from-pink-200 to-orange-200"
+    },
+    {
+      "id": 2,
+      "category": "UI-UX DESIGN",
+      "title": "Product Admin Dashboard",
+      "description": "Aliquam at mollis ipsum. Curabitur ac mi tortor. Suspendisse potenti. Proin feugiat velit vel lectus.",
+      "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=400&fit=crop",
+      "bgColor": "from-gray-800 to-gray-900"
+    },
+    {
+      "id": 3,
+      "category": "UI-UX DESIGN",
+      "title": "Product Admin Dashboard",
+      "description": "Vestibulum a mollis interdum ligula id. Aliquam velit. Vestibulum ante ipsum primis in faucibus orci.",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop",
+      "bgColor": "from-gray-200 to-gray-300"
+    },
+    {
+      "id": 4,
+      "category": "UI-UX DESIGN",
+      "title": "Product Admin Dashboard",
+      "description": "Donec semper magna sit arcu. Nullam digni porttitor semper accumsan enim non quam.",
+      "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop",
+      "bgColor": "from-amber-100 to-amber-200"
+    },
+    {
+      "id": 5,
+      "category": "UI-UX DESIGN",
+      "title": "Product Admin Dashboard",
+      "description": "Aliquam at mollis ipsum. Curabitur ac mi tortor. Suspendisse potenti. Proin feugiat velit vel.",
+      "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600&h=400&fit=crop",
+      "bgColor": "from-green-300 to-yellow-200"
+    },
+    {
+      "id": 6,
+      "category": "UI-UX DESIGN",
+      "title": "Product Admin Dashboard",
+      "description": "Aliquam at mollis ipsum. Curabitur ac mi tortor. Suspendisse potenti. Proin feugiat velit vel.",
+      "image": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&h=400&fit=crop",
+      "bgColor": "from-purple-200 to-purple-300"
+    }
+  ]
+}
